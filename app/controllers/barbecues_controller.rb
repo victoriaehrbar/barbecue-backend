@@ -10,7 +10,7 @@ class BarbecuesController < ApplicationController
     end
 
     def create
-        barbecue = Barbecue.new(Barbecue_params)
+        barbecue = Barbecue.new(barbecue_params)
         if barbecue.save
             render json: barbecue
         end
